@@ -4,6 +4,7 @@
   <name>tiny_arm_description</name>
   <version>0.0.1</version>
   <description>Robot package for the Tiny Arm robot, an open-source 5 DoF robot based on Dynamixel XL330-M288-T actuators!</description>
+  <maintainer>Nick</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
