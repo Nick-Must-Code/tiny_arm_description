@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="tiny_arm">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0154467805480835 0.0617826350820096 -0.00657215799919838"
+        rpy="0 0 0" />
+      <mass
+        value="0.0311295408005772" />
+      <inertia
+        ixx="9.61850539406232E-06"
+        ixy="-3.41397131319374E-07"
+        ixz="1.35811729232709E-08"
+        iyy="5.87428472795033E-06"
+        iyz="1.24564966819691E-07"
+        izz="1.49727117910579E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="-0.000917664715746658 -0.00609018632506213 0.0341239009174026"
+        rpy="0 0 0" />
+      <mass
+        value="0.0315990079709892" />
+      <inertia
+        ixx="4.88599172142966E-06"
+        ixy="3.3905615372196E-08"
+        ixz="1.59741577599758E-07"
+        iyy="3.4848390304125E-06"
+        iyz="-6.33969190443303E-07"
+        izz="2.98009994928766E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 1.5708" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_0"
+    type="revolute">
+    <origin
+      xyz="0.030564 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.0713763546242842 0.00483805981889288 -0.000976639880138186"
+        rpy="0 0 0" />
+      <mass
+        value="0.0393420153339328" />
+      <inertia
+        ixx="3.57757235620135E-06"
+        ixy="1.33277861314988E-07"
+        ixz="1.37357587922023E-08"
+        iyy="5.068190815664E-06"
+        iyz="1.3611946862898E-07"
+        izz="6.26901806483158E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.054388"
+      rpy="0 -1.5708 -1.5708" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.0713763539881609 0.00483806015618365 -0.00122663977194525"
+        rpy="0 0 0" />
+      <mass
+        value="0.0393420146276656" />
+      <inertia
+        ixx="3.57757233469777E-06"
+        ixy="1.33277844658963E-07"
+        ixz="1.37357104395959E-08"
+        iyy="5.0681907165178E-06"
+        iyz="1.3611952615972E-07"
+        izz="6.26901800728853E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0.0945 0.02 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="0.0398508027127943 0.00809953663378277 -0.000712893493436569"
+        rpy="0 0 0" />
+      <mass
+        value="0.0299046982275022" />
+      <inertia
+        ixx="3.81641677405745E-06"
+        ixy="-3.83715192939399E-07"
+        ixz="1.29736954972125E-09"
+        iyy="2.14217625921131E-06"
+        iyz="2.31306348511874E-09"
+        izz="3.90749944172359E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="revolute">
+    <origin
+      xyz="0.0945 0.02 0"
+      rpy="0 0 1.5708" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="0.8"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.00433924968521118 0.000813706093652646 -0.0388886758445833"
+        rpy="0 0 0" />
+      <mass
+        value="0.0356371975583549" />
+      <inertia
+        ixx="5.14183793237405E-06"
+        ixy="3.39154198103064E-08"
+        ixz="-6.2640794575206E-07"
+        iyy="6.29010686359569E-06"
+        iyz="1.59741907308679E-07"
+        izz="3.47917242294778E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="0.032925 0 -0.0007"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="gripper">
+    <inertial>
+      <origin
+        xyz="0.0156347894773499 0.00184400224009498 0.000371482631719646"
+        rpy="0 0 0" />
+      <mass
+        value="0.00610588751342825" />
+      <inertia
+        ixx="4.94658913192892E-07"
+        ixy="-3.20244027819836E-08"
+        ixz="7.88582408884343E-10"
+        iyy="3.49289475002E-07"
+        iyz="1.93347703233535E-13"
+        izz="5.03675998094634E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/gripper.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tiny_arm_description/meshes/gripper.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_gripper"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.056838"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="gripper" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.6"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

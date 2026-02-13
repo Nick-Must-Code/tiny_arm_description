@@ -1,0 +1,19 @@
+# colcon artifacts (usually in workspace root, but safe here)
+build/
+install/
+log/
+
+# Python caches (launch scripts, etc.)
+__pycache__/
+*.pyc
+
+# Editor/OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# RViz backups/autosaves (optional)
+*.bak
