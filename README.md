@@ -6,7 +6,7 @@ ROS2 description package for the tiny_arm robot! (URDF/Xacro + meshes + RViz + l
 ```bash
 mkdir -p ~/arm_ws/src
 cd ~/arm_ws/src
-git clone <REPO_URL>
+git clone https://github.com/Nick-Must-Code/tiny_arm_description.git
 cd ..
 colcon build --symlink-install
 source install/setup.bash
